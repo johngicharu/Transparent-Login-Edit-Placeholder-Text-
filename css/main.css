@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat');
+
+* {
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  outline:none;
+}
+
+body {
+  font-family: "Montserrat";
+  line-height: 1.5;
+}
+
+.container {
+  height: 100vh;
+  background: url("../img/breakfast.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,.8);
+  width: 400px;
+  border-radius: 20px;
+}
+
+.form-container header {
+  font-family: "Merriweather";
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+  color: #fc3e3e;
+  margin: 10px;
+}
+
+form {
+  position: relative;
+  margin: 20px auto 30px;
+  width: 85%;
+}
+
+.input {
+  font-size: 1.1em;
+  width: 100%;
+  height: 40px;
+  margin: 20px 0 15px;
+  border: 1px solid rgba(244, 244, 244, 0.4);
+  border-radius: 20px;
+  background-color: transparent;
+  padding: 20px;
+  color: #f4f4f4;
+}
+
+.input::placeholder {
+  font-family: "Montserrat";
+  color: #f4f4f4;
+}
+
+#submit {
+  width: 25%;
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1em;
+  color: #f4f4f4;
+  border:none;
+  border-radius: 20px;
+  background-color: #fc3e3e;
+  transition: all 250ms ease-in-out;
+}
+
+#submit:hover {
+  background-color: #143bbb;
+}
+
+form > a {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-size: .8em;
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
